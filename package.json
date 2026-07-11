@@ -1,0 +1,53 @@
+{
+  "name": "slidecraft",
+  "productName": "Slidecraft",
+  "version": "1.0.0",
+  "description": "Own-it-forever presentation builder with Beautiful.ai-style auto-layout: pick a layout, content reflows to stay clean, export real PPTX and PDF. No subscription.",
+  "main": "main.js",
+  "author": "Ben (bensblueprints)",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "test": "node test/smoke.js",
+    "dist": "electron-builder --win nsis"
+  },
+  "dependencies": {
+    "pdfkit": "^0.15.2",
+    "pptxgenjs": "^3.12.0"
+  },
+  "devDependencies": {
+    "electron": "^33.4.0",
+    "electron-builder": "^25.1.8"
+  },
+  "build": {
+    "appId": "com.bensblueprints.slidecraft",
+    "productName": "Slidecraft",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "src/**/*",
+      "renderer/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "build/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "menuCategory": "OneTimeSuite",
+      "shortcutName": "Slidecraft"
+    }
+  }
+}

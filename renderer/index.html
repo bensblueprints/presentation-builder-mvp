@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Slidecraft</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="app">
+    <header id="topbar">
+      <div class="brand-row">
+        <div class="logo-dot"></div>
+        <h1>Slidecraft</h1>
+        <input id="deck-title" type="text" value="Untitled deck" spellcheck="false" />
+      </div>
+      <div class="top-actions">
+        <select id="theme-picker" title="Theme"></select>
+        <button id="open-deck" class="ghost">Open</button>
+        <button id="save-deck" class="ghost">Save</button>
+        <button id="present" class="ghost">▶ Present</button>
+        <button id="export-pdf" class="ghost">PDF</button>
+        <button id="export-pptx" class="primary">Export PPTX</button>
+      </div>
+    </header>
+
+    <div id="body">
+      <aside id="slide-list">
+        <div id="thumbs"></div>
+        <button id="add-slide" class="ghost">＋ Add slide</button>
+      </aside>
+
+      <main id="stage-wrap">
+        <div id="stage"></div>
+        <div id="notes-wrap">
+          <label>Speaker notes</label>
+          <textarea id="notes" rows="3" spellcheck="false" placeholder="Notes only you see in presenter mode…"></textarea>
+        </div>
+      </main>
+
+      <aside id="inspector">
+        <h2>Layout</h2>
+        <div id="layouts" class="layout-grid"></div>
+        <h2>Content</h2>
+        <div id="fields"></div>
+        <button id="delete-slide" class="danger">Delete slide</button>
+      </aside>
+    </div>
+  </div>
+
+  <!-- Presenter mode overlay -->
+  <div id="presenter" class="hidden">
+    <div id="p-main"></div>
+    <div id="p-side">
+      <div id="p-timer">00:00</div>
+      <div class="p-label">Next slide</div>
+      <div id="p-next"></div>
+      <div class="p-label">Notes</div>
+      <div id="p-notes"></div>
+      <div class="p-hint">←/→ navigate · Esc exit</div>
+    </div>
+  </div>
+
+  <script src="../src/core/themes.js"></script>
+  <script src="../src/core/layout.js"></script>
+  <script src="../src/core/charts.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
