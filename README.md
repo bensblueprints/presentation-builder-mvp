@@ -12,7 +12,7 @@ Beautiful.ai charges **$12–40/month, forever**, for auto-layout. The auto-layo
 
 Don't want to touch a terminal? Grab the packaged Windows installer (and support development):
 
-**→ [Get Slidecraft on Whop](https://whop.com/onetime-suite)** — pay once, own it forever.
+**→ [Get Slidecraft on Whop](https://whop.com/benjisaiempire/slidecraft)** — pay once, own it forever.
 
 ## Features
 
