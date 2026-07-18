@@ -1,5 +1,9 @@
 # 📽 Slidecraft
 
+## Demo
+
+VIDEO-PLACEHOLDER
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 **The auto-layout presentation builder you buy once.** Pick a layout, type your content, and the slide arranges itself — add a bullet and everything reflows to stay clean, swap themes without breaking a thing. Export real, fully editable **PPTX** (native PowerPoint charts, real bullets, speaker notes) and **PDF**. Present with a built-in presenter mode: next-slide preview, notes and a timer.
